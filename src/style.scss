@@ -1,3 +1,4 @@
+@import "cartes.scss";
 $primary-color: #279527;
 $secondary-color: lighten($primary-color,30%);
 
@@ -11,8 +12,11 @@ body{
 
 #container{
   background-color:$secondary-color;
-  height:800px;
-  width:600px;
+  height:600px;
+  width:800px;
   border:1px solid white;
   border-radius: 5%;
+}
+p{
+  margin:3px 3px;
 }

@@ -1,0 +1,53 @@
+.card{
+height: 150px;
+width :100px;
+border:1px solid black;
+margin-top: 50px;
+margin-left: 50px;
+border-radius:10%;
+background-color: white;
+.border{
+    height:140px;
+    width:90px;
+    border:1px solid black;
+    margin-top:5px;
+    margin-left:5px;
+    border-radius:10%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    .top_left_symbol{
+        margin-top:0px;
+        height:40px;
+        width:40px;
+    }
+    .top_right_symbol{
+        margin-top:0px;
+        margin-left :10px;
+        height:40px;
+        width:40px;
+        text-align: right;
+    }
+    .center_symbol{
+        margin-left: 30px;
+        margin-top: 0px;
+        margin-bottom:0px;
+        margin-right:35px;
+        font-size:40px;
+    }
+    .bottom_left_symbol{
+        margin-top:23px;
+        margin-bottom: 0px;
+        height:40px;
+        width:40px;
+    }
+    .bottom_right_symbol{
+        margin-top:23px;
+        margin-bottom: 0px;
+        margin-left:10px;
+        height:40px;
+        width:40px;
+        text-align: right;
+    }
+}
+}
