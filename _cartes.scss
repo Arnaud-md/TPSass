@@ -1,3 +1,8 @@
+@use 'sass:math';
+
+.transform_random{
+    transform:rotate(math.random(360)*1deg);
+
 .card{
 height: 150px;
 width :100px;
@@ -6,6 +11,7 @@ margin-top: 50px;
 margin-left: 50px;
 border-radius:10%;
 background-color: white;
+
 .border{
     height:140px;
     width:90px;
@@ -49,6 +55,7 @@ background-color: white;
         width:40px;
         text-align: right;
     }
+}
 }
 }
 .second_card{
