@@ -21,48 +21,66 @@ border-radius:10%;
 background-color: white;
 
 .border{
-    height:140px;
-    width:90px;
+    height:$variable_height_border;
+    width:$variable_width_border;
     border:1px solid black;
     margin-top:5px;
     margin-left:5px;
+    margin-right:5px;
+    margin-bottom: 5px;
     border-radius:10%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content:space-between;
+    .box{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    width:100%;
     .top_left_symbol{
         margin-top:0px;
-        height:40px;
-        width:40px;
+        height:10px;
+        width:21px;
     }
     .top_right_symbol{
         margin-top:0px;
-        margin-left :10px;
-        height:40px;
-        width:40px;
+        margin-left :0px;
+        height:10px;
+        width:20px;
         text-align: right;
+        display: flex;
+        flex-direction: row;
+        justify-content:end;
     }
+}
     .center_symbol{
-        margin-left: 30px;
-        margin-top: 0px;
-        margin-bottom:0px;
-        margin-right:35px;
+        margin-left: $margin_left_100;
+        margin-top: $margin_top_150;
+        margin-bottom:$margin_bottom_150;
+        margin-right:$margin_right_100;
         font-size:40px;
     }
+    .box{
+        display: flex;
+        flex-direction: row;
+        justify-content:space-between;
+        width:100%;
     .bottom_left_symbol{
-        margin-top:23px;
+        margin-top:0px;
         margin-bottom: 0px;
-        height:40px;
-        width:40px;
+        height:10px;
+        width:21px;
     }
     .bottom_right_symbol{
-        margin-top:23px;
+        margin-top:0px;
         margin-bottom: 0px;
-        margin-left:10px;
-        height:40px;
-        width:40px;
+        margin-left:0px;
+        height:10px;
+        width:20px;
         text-align: right;
     }
+}
 }
 }
 }
