@@ -1,11 +1,19 @@
 @use 'sass:math';
+$variable_height:125px;
+$variable_width:80px;
+$variable_height_border:115px;
+$variable_width_border:70px;
+$margin_top_150:0%;//+15%
+$margin_left_100:30%;//+5%
+$margin_bottom_150:15%;//+10%
+$margin_right_100:20%;//+0%
 
 .transform_random{
     transform:rotate(math.random(360)*1deg);
 
 .card{
-height: 150px;
-width :100px;
+height: $variable_height;
+width :$variable_width;
 border:1px solid black;
 margin-top: 50px;
 margin-left: 50px;
@@ -59,46 +67,59 @@ background-color: white;
 }
 }
 .second_card{
-    height: 150px;
-    width :100px;
+    height: $variable_height;
+    width :$variable_width;
     border:1px solid black;
     margin-top: 50px;
     margin-left: 50px;
     border-radius:10%;
     background-color: white;
     .border{
-        height:140px;
-        width:90px;
+
         border:1px solid black;
         margin-top:5px;
         margin-left:5px;
+        margin-right:5px;
+        margin-bottom: 5px;
+        height: $variable_height_border;
+        width: $variable_width_border;
         border-radius:10%;
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
+        .box{
+            text-align:center;
         .top_left_symbol{
             margin-top:0px;
+            margin-bottom: 0px;
+            margin-left: 0px;
             height:10px;
-            width:40px;
+            width:21px;
             margin-right:0px;
+            
         }
         .top_left_symbol2{
             margin-top:0px;
             margin-left :0px;
+            margin-bottom:0px;
             height:10px;
-            width:40px;
+            width:20px;
 
         }
+    }
         .center_symbol{
-            margin-left: 30px;
-            margin-top: 20px;
-            margin-bottom:20px;
-            margin-right:35px;
+            margin-left: $margin_left_100;
+            margin-top: $margin_top_150;
+            margin-bottom:$margin_bottom_150;
+            margin-right:$margin_right_100;
             font-size:40px;
         }
         .transform{
             transform:rotate(180deg);
+            display:flex;
+            text-align:end;
         }
 
     }
     }
+    //
