@@ -140,4 +140,65 @@ background-color: white;
 
     }
     }
+    @for $i from 1 through 5 {
+        .card-#{$i} {
+            height: $variable_height;
+            width :$variable_width;
+            border:1px solid black;
+            margin-top: 50px;
+            margin-left: 50px;
+            border-radius:10%;
+            background-color: white;
+            position: absolute;
+            top:$i*50px-50px;
+
+            .border{
+
+                border:1px solid black;
+                margin-top:5px;
+                margin-left:5px;
+                margin-right:5px;
+                margin-bottom: 5px;
+                height: $variable_height_border;
+                width: $variable_width_border;
+                border-radius:10%;
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                .box{
+                    text-align:center;
+                .top_left_symbol{
+                    margin-top:0px;
+                    margin-bottom: 0px;
+                    margin-left: 0px;
+                    height:10px;
+                    width:21px;
+                    margin-right:0px;
+                    
+                }
+                .top_left_symbol2{
+                    margin-top:0px;
+                    margin-left :0px;
+                    margin-bottom:0px;
+                    height:10px;
+                    width:20px;
+        
+                }
+            }
+                .center_symbol{
+                    margin-left: $margin_left_100;
+                    margin-top: $margin_top_150;
+                    margin-bottom:$margin_bottom_150;
+                    margin-right:$margin_right_100;
+                    font-size:40px;
+                }
+                .transform{
+                    transform:rotate(180deg);
+                    display:flex;
+                    text-align:end;
+                }
+        
+        }
+      }
+    }
     //
