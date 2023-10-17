@@ -10,7 +10,7 @@ $margin_right_100:20%;//+0%
 
 .transform_random{
     transform:rotate(math.random(360)*1deg);
-
+}
 
 .card{
     height: $variable_height;
@@ -85,6 +85,11 @@ $margin_right_100:20%;//+0%
         }
     }
 }
+.transform_random2{
+    transform:rotate(math.random(360)*1deg);
+}
+.transform_random3{
+    transform:rotate(math.random(360)*1deg);
 }
 
 .second_card{
